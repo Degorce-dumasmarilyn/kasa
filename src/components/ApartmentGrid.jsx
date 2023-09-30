@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from "react";
+import React  from "react";
 import "./ApartmentGrid.scss";
 import ApartmentCard from "./ApartmentCard.jsx";
 import { useApartments } from "../hooks/useApartments";
@@ -8,7 +8,7 @@ import { useApartments } from "../hooks/useApartments";
 function ApartmentGrid() {
   const apartments = useApartments();
 
- //useeffect avec une array vide == exécute cette fonction au chargement du composant
+ //useeffect avec une array vide == executes this function when the component loads
   return (
     <div className="grid">
       {apartments.map((apartment) => (
