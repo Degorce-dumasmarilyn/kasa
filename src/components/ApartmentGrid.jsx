@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ApartmentGrid.scss";
 import ApartmentCard from "./ApartmentCard.jsx";
 import { useApartments } from "../hooks/useApartments";
@@ -12,7 +12,12 @@ function ApartmentGrid() {
   return (
     <div className="grid">
       {apartments.map((apartment) => (
-        <ApartmentCard key={apartment.id} title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />
+        <ApartmentCard 
+          key={apartment.id} 
+          title={apartment.title} 
+          imageUrl={apartment.cover} 
+          id={apartment.id}
+        />
         
       ))}
       

@@ -7,7 +7,7 @@ export function useApartment() {
     const location = useLocation();
     useEffect(() => {
         const abortController = new AbortController();
-        fetch("db.json")   
+        fetch("db.json",{ signal: abortController.signal })   
         .then((res) => res.json())
         .then((flats) => {
             const flat = flats.find((flat) => flat.id === location.state.apartmentId);
@@ -17,6 +17,8 @@ export function useApartment() {
         return () => {
           abortController.abort();  
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
     return flat; 
 }
