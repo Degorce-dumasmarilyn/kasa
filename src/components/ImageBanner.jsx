@@ -42,7 +42,7 @@ export function ImageBanner (props) {
             {arePicturesAvailable() && (
                 <>
                     <button className="btn btn-previous" onClick={moveToPrevious}>
-                    <i className="fas fa-chevron-left"></i>
+                        <i className="fas fa-chevron-left"></i>
                     </button>
                     <span className="slide__counter">
                         {currentPicture + 1} / {pictures.length}
