@@ -18,9 +18,7 @@ function ApartmentGrid() {
           imageUrl={apartment.cover} 
           id={apartment.id}
         />
-        
       ))}
-      
     </div>
   );
 }

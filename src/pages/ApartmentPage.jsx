@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect, useState } from "react"
+import React from "react"
 import PropTypes from 'prop-types';
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./ApartementPage.scss";
@@ -11,7 +11,7 @@ import { useApartment } from "../hooks/useApartment";
 function ApartmentPage() {
   const flat = useApartment();  
 
-  if (flat == null) return <div>... loading</div>
+  if (flat === null) return <div>... loading</div>
   return (
     <div className="apartment-page">
       <ImageBanner pictures={flat.pictures} />
