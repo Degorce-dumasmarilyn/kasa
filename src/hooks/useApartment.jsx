@@ -18,7 +18,7 @@ export function useApartment() {
           abortController.abort();  
         };
     
-    }, []);
+    }, [location.state.apartmentId]);
 
     return flat; 
 }
