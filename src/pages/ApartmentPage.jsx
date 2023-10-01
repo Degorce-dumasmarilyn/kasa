@@ -11,7 +11,7 @@ import { useApartment } from "../hooks/useApartment";
 function ApartmentPage() {
   const flat = useApartment();  
 
-  if (flat == null) return <div>... loading</div>
+  if (flat === null) return <div>... loading</div>
   return (
     <div className="apartment-page">
       <ImageBanner pictures={flat.pictures} />
