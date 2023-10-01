@@ -11,7 +11,7 @@ export const useApartments = () => {
       .catch(console.error);
 
       return () => {
-        console.log("cleanup");
+        
         abortController.abort();
       };
     }, []);

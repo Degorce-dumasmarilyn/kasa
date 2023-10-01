@@ -17,7 +17,7 @@ export function ImageBanner (props) {
         setCurrentPicture((currentPicture + 1) % pictures.length);  
     };
     const moveToPrevious = () => {
-        const newCurrentPicture = currentPicture -1;
+        const newCurrentPicture = currentPicture - 1;
         if (newCurrentPicture < 0) {
             setCurrentPicture(pictures.length - 1);
             return;
@@ -38,16 +38,17 @@ export function ImageBanner (props) {
     };
     return (
         <div className="image__banner">
+            
             <div className="image__container">{getCarouselOrderDefaultImage()}</div> 
-            {arePicturesAvailable() && (
+            {arePicturesAvailable() && ( 
                 <>
                     <button className="btn btn-previous" onClick={moveToPrevious}>
                         <i className="fas fa-chevron-left"></i>
                     </button>
-                    <span className="slide__counter">
+                    <span className="slide-counter">
                         {currentPicture + 1} / {pictures.length}
-                    </span>
-                    <button className="btn btn-next" onClick={moveToNext} >
+                    </span>  
+                    <button className="btn btn-next" onClick={moveToNext}>
                         <i className="fas fa-chevron-right"></i>
                     </button>
                 </>
