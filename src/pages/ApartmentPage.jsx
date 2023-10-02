@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react"
-import PropTypes from 'prop-types';
+
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./ApartementPage.scss";
 import { ImageBanner } from "../components/ImageBanner";
@@ -27,9 +27,7 @@ function ApartmentPage() {
   );
 }
 
-ApartmentPage.propTypes = {
-  flat: PropTypes.object.isRequired,
-};
+
 
 
 export default ApartmentPage;
