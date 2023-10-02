@@ -12,12 +12,14 @@ function ApartmentGrid() {
   return (
     <div className="grid">
       {apartments.map((apartment) => (
-        <ApartmentCard 
-          key={apartment.id} 
-          title={apartment.title} 
-          imageUrl={apartment.cover} 
-          id={apartment.id}
-        />
+        <li key={apartment.id}>
+          <ApartmentCard 
+           
+            title={apartment.title} 
+            imageUrl={apartment.cover} 
+            id={apartment.id}
+          />
+        </li>
       ))}
     </div>
   );
