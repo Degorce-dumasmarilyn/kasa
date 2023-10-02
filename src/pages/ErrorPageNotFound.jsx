@@ -12,8 +12,8 @@ export function ErrorPageNotFound() {
     <Main>
     <div className="error-page">
         <h1>404</h1>
-        <h2>Oops! La page que vous recherchez n'existe pas</h2>
-        <Link to="/">Retourner sur la page d'accueil</Link>
+        <h2>Oops! La page que vous recherchez n&apos;existe pas</h2>
+        <Link to="/">Retourner sur la page d&apos;accueil</Link>
     </div> 
     </Main>
   </>
