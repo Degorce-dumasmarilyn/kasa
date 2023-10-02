@@ -2,7 +2,7 @@
 import React from "react"
 
 import { DescriptionPanel } from "../components/DescriptionPanel";
-import "./ApartementPage.scss";
+import "./ApartmentPage.scss";
 import { ImageBanner } from "../components/ImageBanner";
 import { ApartmentHeader } from "../components/ApartmentHeader";
 import { useApartment } from "../hooks/useApartment";
