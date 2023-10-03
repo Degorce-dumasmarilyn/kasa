@@ -30,12 +30,15 @@
         top: -0.3rem;
         z-index: -1;
         transition: transform 0.3s ease-in-out;
+        height: 0;
+        overflow: hidden;
 
         &.hidden {
             transform: translateY(-100%);    
         }
         &.visible {
             transform: translateY(0);
+            height: auto;
             
         }
     }
