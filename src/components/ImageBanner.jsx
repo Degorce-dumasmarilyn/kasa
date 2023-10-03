@@ -40,7 +40,7 @@ export function ImageBanner (props) {
         <div className="image__banner">
             
             <div className="image__container">{getCarouselOrderDefaultImage()}</div> 
-            {arePicturesAvailable() && ( 
+            {arePicturesAvailable() && pictures.length > 1 && ( 
                 <>
                     <button className="btn btn-previous" onClick={moveToPrevious}>
                         <i className="fas fa-chevron-left"></i>
